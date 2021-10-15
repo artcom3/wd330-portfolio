@@ -14,9 +14,9 @@ const btns = btnContainer.getElementsByClassName("btn");
 
 let activeFilter = 'filter-all'
 
-// Loop through the buttons and add the active class to the current/touchend button
+// Loop through the buttons and add the active class to the current/clicked button
 for (var i = 0; i < btns.length; i++) {
-    btns[i].addEventListener("touchend", function() {
+    btns[i].addEventListener("click", function() {
         const current = document.getElementsByClassName("active");
         current[0].className = current[0].className.replace(" active", "");
         this.className += " active";
@@ -40,7 +40,7 @@ function createTask(name) {
 }
 
 // Checking the tasks
-tasksContainer.addEventListener('touchend', e => {
+tasksContainer.addEventListener('click', e => {
     if (e.target.tagName.toLowerCase() === 'input') {
         const selectedTask = tasks.find(task => task.id === e.target.parentElement.id)
         selectedTask.complete = e.target.checked;
@@ -50,7 +50,7 @@ tasksContainer.addEventListener('touchend', e => {
 })
 
 // Adding New Task
-addTaskButton.addEventListener('touchend', e => {
+addTaskButton.addEventListener('click', e => {
     e.preventDefault();
     const inputTask = newTaskInput.value;
 
