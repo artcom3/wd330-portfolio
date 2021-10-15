@@ -1,0 +1,113 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: sans-serif;
+    height: 100%;
+    
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    text-align: center;
+}
+
+#content {
+    height: 100%;
+    position: relative;
+    padding: 20px 20px;
+}
+
+#section-2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    padding-bottom: 70px;
+    align-items: center;
+}
+
+#task-count {
+    text-align: center;
+    padding-left: 15px;
+}
+
+.task {
+    padding: 15px 25px;
+    margin: 16px 0px;
+    border-radius: 21px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.task label {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.task button {
+    position: relative;
+    float: right;
+    border: none;
+    padding: 0px;
+    background-color: white;
+    margin: 0;
+}
+
+.material-icons.md-dark {
+    color: rgba(0, 0, 0, 0.54); 
+}
+
+
+#adding-form {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-content: stretch;
+    padding: 20px;
+    bottom: 0px;
+    left: 0;
+}
+
+#adding-form .add-text {
+    flex-grow: 1;
+    padding-right: 20px;
+}
+
+.add-text input[type="text"] {
+    width: 100%;
+    padding: 6px 12px;
+}
+
+.add-button button {
+    height: 100%;
+    border: none;
+    background-color: lightblue;
+    padding: 3px;
+}
+
+.add-button button:hover {
+    background-color: rgb(152, 120, 204);
+}
+
+
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+  
+/* Style the active class (and buttons on mouse-over) */
+.active, .btn:hover {
+    background-color: #666;
+    color: white;
+}

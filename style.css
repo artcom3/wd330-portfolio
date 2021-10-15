@@ -1,9 +1,293 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap');
+
 body {
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
+  background-color: #F1F7EE;
+  font-size: 18px;
+  margin: 0;
+  color: #444;
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box
+}
+
+p,
+a {
+  font-family: "Open Sans", Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: "Montserrat", Arial, sans-serif;
+}
+
+pre {
+  margin: 0.7rem 0;
+  background: #333;
+  white-space: pre;
+  word-wrap: break-word;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+pre code {
+  display: block;
+  font-family: 'Noto Sans Mono', monospace;
+  padding: 0.5rem;
+  overflow-x: auto;
+  font-size: 13px;
+  line-height: 19px;
+  color: #ddd;
+}
+
+.content {
+  min-height: 100vh;
+}
+
+.logo-box {
+  margin: auto;
+  text-align: center;
+}
+
+#logo {
+  background-color: white;
+  margin: auto;
+  padding: 1rem;
+}
+
+#logo a {
+  text-decoration: none;
+  font-weight: bolder;
+  text-align: center;
+}
+
+#logo-main {
+  color: black;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: 32px;
+}
+
+#logo-sub {
+  font-size: 16px;
+}
+
+nav {
+  position: sticky;
+  top: -1px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 1rem 0;
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+nav a:hover {
+  background-color: #37474F;
+  color: white;
+}
+
+.banner-box {
+  position: relative;
+  background-color: gray;
+
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  color: white;
+  padding: 10rem 1rem;
+  z-index: -1;
+}
+
+.banner-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fhome-banner.jpg?v=1626819347066");
+}
+
+.banner-portfolio {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fportfolio-banner.jpg?v=1626820451656");
+}
+
+.banner-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fabout-banner.jpg?v=1626820132109");
+}
+
+.button {
+  text-decoration: none;
+  background-color: #F5B700;
+  padding: 10px 15px;
+  color: white;
+  text-transform: uppercase;
+  font-family: Montserrat, sans-serif;
+  font-weight: bold;
+  font-size: .75em;
+  border-radius: 10px;
+}
+
+
+
+
+.sub-content {
+  background-color: white;
+  max-width: 1000px;
+  margin: -7em 1em 2em 1em;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 5px;
+  padding: 1em 2.5em 2em;
+}
+
+.sub-content img {
+  width: 100%;
+}
+
+.sub-content li {
+  margin-bottom: 10px;
+}
+
+
+.project img {
+  max-width: 100%;
+}
+
+.project ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 1em;
+  gap: 2em;
+}
+
+.project li {
+  border-radius: 5px;
+  overflow: hidden;
+  transition: transform .2s, box-shadow .4s;
+}
+
+.project li:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  transform: scale(1.075);
+}
+
+.project li h2 {
+  font-size: 1em;
+  text-align: center;
+}
+
+.project li p {
+  padding: 0 1em;
+}
+
+.project li a {
+  color: black;
+  text-decoration: underline solid transparent;
+  transition: text-decoration .6s, color .3s;
+}
+
+.project li:hover a {
+  color: #0044CC;
+  text-decoration: underline solid #F5B700;
+}
+
+
+
+
+footer {
+  margin-top: 4em;
+  padding: 10px;
+  background-color: #1C2833;
+  color: #F8F9F9;
+  text-align: center;
+}
+
+footer p {
+  margin: 10px 0 15px 0;
+}
+
+footer a {
+  color: #F8F9F9;
+}
+
+.material-icons.md-18 {
+  font-size: 0.9em;
+}
+
+.icon {
+  padding: 5px;
+  width: 2.5em;
+  filter: brightness(0) invert(1);
+}
+
+
+@media only screen and (min-width: 600px) {
+  nav ul {
+    flex-direction: row;
   }
-  
-  h1 {
-    background-color: antiquewhite;
+
+  .services ul {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .home-left-grid,
+  .home-right-grid {
+    max-width: 950px;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+  .home-left-grid p,
+  .home-right-grid p {
+    margin-bottom: 1rem;
+  }
+
+  .home-paragraph-2 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .sub-content {
+    margin: -7em auto 2em auto;
+  }
+
+  .about div {
     padding: 1em;
   }
+
+  input,
+  textarea {
+    width: 250px;
+    margin-left: .5em;
+  }
+
+  .form-button {
+    padding-left: 90px;
+  }
+
+  form button {
+    margin-left: 1em;
+  }
+}
