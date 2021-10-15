@@ -117,15 +117,15 @@ nav a:hover {
 }
 
 .banner-home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fhome-banner.jpg?v=1626819347066");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/background-code.jpg");
 }
 
 .banner-portfolio {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fportfolio-banner.jpg?v=1626820451656");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/background-tree.jpg");
 }
 
 .banner-about {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://cdn.glitch.com/afcce994-9fbc-4db6-87d7-9d15ca1d4e4f%2Fabout-banner.jpg?v=1626820132109");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("resources/background-tree.jpg");
 }
 
 .button {
