@@ -50,6 +50,12 @@ header {
     padding-right: 10px;
 }
 
+.task .completed {
+    text-decoration: line-through;
+    color: #808080;
+    font-style: italic;
+}
+
 .task button {
     position: relative;
     float: right;

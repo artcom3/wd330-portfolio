@@ -129,6 +129,11 @@ function render() {
         const label = taskHtmlElement.querySelector('label');
         label.textContent = task.name;
         label.htmlFor = task.id;
+
+        if(task.complete) {
+            label.classList.add('completed');
+        }
+        
         
         tasksContainer.appendChild(taskHtmlElement);
     })
