@@ -34,10 +34,46 @@
       <!-- CONTENT -->
 
       <div class="sub-content">
+        <h2>Topics</h2>
+        <p>Javascript Novice to Ninja 2nd Edition:</p>
+        <ul>
+          <li>Ch10: Testing and Debugging</li>
+        </ul>
+
         <h2>Exercises</h2>
         <ul>
-            <li><a href="todos/index.html">Challenge One: To Do List</a></li>
+          <li><a href="quiz_ninja/ninja_quiz.html">Quiz Ninja</a></li>
         </ul>
+
+        <h2>Notes</h2>
+        <p>Errors are usually caused by:</p>
+        <ol>
+          <li>System error</li>
+          <li>Programmer error</li>
+          <li>User error</li>
+        </ol>
+        <p> Programmer errors are our responsibility, so we must ensure they are minimized as much as possible and fixed promptly</p>
+        
+        <h3>Strict Mode</h3>
+        <p>Not using strict mode is often referred to as 'sloppy mode'. Strict mode encourages a better quality of JavaScript to be written, so its use is recommended.</p>
+        <pre><code>'use strict';</code></pre>
+
+        <h3>Error Objects</h3>
+        <p>An "error" object can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function.</p>
+        <pre><code>const error = new Error('Oops, something went wrong');</code></pre>
+        <p><strong>How many error objects are there? </strong></p>
+        <p>There are seven more error objects used for specific errors:</p>
+        <ul>
+          <li><b>EvalError</b>, not used in the current ECMAScript.</li>
+          <li><b>RangeError</b>, thrown when a number is outside an allowable range of values.</li>
+          <li><b>ReferenceError</b>, thrown when a reference is made to an item that doesn’t exist.</li>
+          <li><b>SyntaxError</b>, thrown when there’s an error in the code’s syntax.</li>
+          <li><b>TypeError</b>, thrown when there’s an error in the type of value used.</li>
+          <li><b>URIError</b>, thrown when there’s a problem encoding or decoding the URI</li>
+          <li><b>InternalError</b>, a non-standard error that is thrown when an error occurs in the JavaScript engine.</li>
+        </ul>
+        
+
       </div>
 
     </main>
@@ -58,4 +94,5 @@
     </footer>
   </div>
 </body>
+
 </html>
