@@ -154,7 +154,7 @@ nav .active {
   margin: -7em 1em 2em 1em;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   border-radius: 5px;
-  padding: 1em 2.5em 2em;
+  padding: 1.3em;
 }
 
 .sub-content img {
@@ -163,6 +163,19 @@ nav .active {
 
 .sub-content li {
   margin-bottom: 10px;
+}
+
+.sub-content h2 {
+  margin: 0.5em 0;
+}
+
+.sub-content p {
+  margin: 0.7em 0;
+}
+
+.sub-content ol,
+.sub-content ul {
+  margin-top: 0.7em;
 }
 
 
@@ -276,6 +289,7 @@ footer a {
 
   .sub-content {
     margin: -7em auto 2em auto;
+    padding: 1.5em 2.5em 2em;
   }
 
   .about div {
