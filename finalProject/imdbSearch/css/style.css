@@ -26,7 +26,8 @@ h2 {
     text-align: center
 }
 
-#movies {
+#movies,
+#movies-saved {
     margin: 20px auto;
     max-width: 950px;
     display: flex;
@@ -52,8 +53,6 @@ article img {
 /* Modal Form */
 
 .modal {
-    --gap: 15px;
-  
     position: fixed;
     top: 0;
     left: 0;
@@ -63,7 +62,7 @@ article img {
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
-    padding: var(--gap);
+    padding: 15px;
     background: rgba(0, 0, 0, 0.5);
 }
   
@@ -91,7 +90,7 @@ article img {
     display: flex;
     align-items: center;
     cursor: pointer;
-    padding: var(--gap);
+    padding: 15px;
     background: none;
     border: none;
     outline: none;
@@ -107,7 +106,7 @@ article img {
 
 .modal__bottom {
     text-align: right;
-    padding: 2px;
+    padding: 15px;
 }
 
 .modal__button {

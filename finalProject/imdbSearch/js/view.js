@@ -1,8 +1,8 @@
 class ImdbView {
 
     // Render Movies in the container
-    renderMovies(movies) {
-        this.clearContainer()
+    renderMovies(movies, container) {
+        this.clearContainer(container)
         movies.forEach(movie => {
 
             let article = document.createElement('article');
@@ -24,7 +24,7 @@ class ImdbView {
             article.appendChild(imdbID);
 
 
-            document.querySelector('#movies').appendChild(article);
+            document.querySelector(container).appendChild(article);
         });
     }
 
@@ -72,7 +72,7 @@ class ImdbView {
                     </button>
                 </div>
                 <div class="modal__content"></div>
-                <div class="modal__bottom"></div>
+                <div class="modal__bottom"><button id="saveButton" class="modal__button">Save</button></div>
             </div>
         `;
 
@@ -81,12 +81,12 @@ class ImdbView {
         modal.querySelector(".modal__close").addEventListener("click", () => {
             document.body.removeChild(modal);
         });
-      
+
         document.body.appendChild(modal);
     }
 
-    clearContainer() {
-        document.querySelector('#movies').innerHTML = "";
+    clearContainer(container) {
+        document.querySelector(container).innerHTML = "";
     }
 }
 
