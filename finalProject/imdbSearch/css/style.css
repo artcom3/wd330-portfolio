@@ -1,0 +1,150 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+
+h2 {
+    text-align: center;
+}
+
+.header {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    width: 100%;
+    text-align: center
+}
+
+.sub-header {
+    background-color: #ebf5f0;
+    padding: 10px;
+    width: 100%;
+    text-align: center
+}
+
+#movies {
+    margin: 20px auto;
+    max-width: 950px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center
+}
+
+article {
+    margin: 12px;
+    padding: 6px;
+    width: 260px;
+    border-radius: 6px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+article img {
+    max-width: 100%;
+}
+
+/* Modal Form */
+
+.modal {
+    --gap: 15px;
+  
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: var(--gap);
+    background: rgba(0, 0, 0, 0.5);
+}
+  
+.modal__inner {
+    background: #ffffff;
+    width: 100%;
+    max-width: 700px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.modal__top {
+    display: flex;
+    align-items: center;
+    background-color: #eeeeee;
+}
+
+.modal__title {
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 20px;
+}
+
+.modal__close {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: var(--gap);
+    background: none;
+    border: none;
+    outline: none;
+}
+
+.modal__content {
+    padding: 12px;
+    line-height: 1.5;
+    max-height: 720px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.modal__bottom {
+    text-align: right;
+    padding: 2px;
+}
+
+.modal__button {
+    display: inline-block;
+    padding: 6px 12px;
+    background: #E71D36;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal__button:not(:last-child) {
+    margin-right: 12px;
+}
+
+.modal__button:hover {
+    background: #FF9F1C;
+}
+
+.movie-info-modal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.movie-info-modal img {
+    justify-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .movie-info-modal {
+        grid-template-columns: 1fr;
+    }
+}
