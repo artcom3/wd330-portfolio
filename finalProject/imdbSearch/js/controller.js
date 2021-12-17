@@ -67,19 +67,6 @@ class ImdbController {
     getData(key) {
         return JSON.parse(localStorage.getItem(key) || "[]");
     }
-
-    updateDate(key, newData) {
-        if(localStorage.getItem(key) != null){
-            const oldData = JSON.parse(localStorage.getItem(key));
-            for(keyObj in newData){
-                oldData[keyObj] = newData[keyObj];
-            }
-            const values = JSON.stringify(oldData);
-            localStorage.setItem(key,values);
-        } else {
-            return false;
-        }
-    }
 }
 
 export default ImdbController;
